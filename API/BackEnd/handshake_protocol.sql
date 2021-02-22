@@ -1,0 +1,55 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 16, 2021 at 01:29 PM
+-- Server version: 10.1.29-MariaDB
+-- PHP Version: 7.2.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `python`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `handshake_protocol`
+--
+
+CREATE TABLE `handshake_protocol` (
+  `request` varchar(100) NOT NULL,
+  `response` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `handshake_protocol`
+--
+
+INSERT INTO `handshake_protocol` (`request`, `response`) VALUES
+('ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad', 'a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3'),
+('c3f7bdf537c46724392c4428e47e04c148c56966190c3c9ed92114800c9f35bb', '6eeb55f76600d4ad08be72ad3ac13d969330e73d7ad53031557dab443eba22db'),
+('3608bca1e44ea6c4d268eb6db02260269892c0b42b86bbf1e77a6fa16c3c9282', '6bcaea9882504292b2f6ea37a84b215463e71ab73b824ee90ecdc10c8dde71ed'),
+('04d2fbb3a46ab4fdca88f63fad2cff0727a64bdcb8148759c9ea90e9164ac177', 'd4ecc8b7a4009a6225bcdf88399c3708699fe50b65724cff6b0ecd378e986fd3'),
+('421c76d77563afa1914846b010bd164f395bd34c2102e5e99e0cb9cf173c1d87', '1f58b9145b24d108d7ac38887338b3ea3229833b9c1e418250343f907bfd1047'),
+('6c783529923927aa0e96403dede6268aeb8eb6644ae43a2e637bf5d865a3c1a5', '280d44ab1e9f79b5cce2dd4f58f5fe91f0fbacdac9f7447dffc318ceb79f2d02'),
+('c9805e841751391ca18d1c3508700975438fe0e86161f2d52e5ade49cbb41776', 'bb647e29b34334079a9d553184f6cb58abd93182f8a4f7e95caf4bea0c2b2171'),
+('4633f81221964f32f58f7cc9aec339b8f38d59e8bb4efab892c0aa9599ecf152', 'b9c1c2dec7da93b53a40ae6b3058945d29819bde35819803de6022d112bec47a'),
+('c998b1e561bdf56a9db7a9697a36f76e533a622f575723eef82f119361b0a6dc', 'dc9f28b12dd1818ee42ffc92ecb940386214598837348d30d3c6c0b7b57e34c9'),
+('f9b87cab13a1f660ca0bf58ea1b0cbc7c4527fcac21046717be58db31344687e', '0fcfc7fbdecb210d3168432daf86784bc147dee96e3c7fd5f40355125b2dfe4d');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
